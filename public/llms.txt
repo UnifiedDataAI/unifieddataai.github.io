@@ -1,0 +1,26 @@
+# UnifiedDataAI 
+
+> The Universal Data API designed explicitly for AI Agents and LLMs. 
+
+## Overview
+UnifiedDataAI provides a unified, structured API endpoint and NPM package that allows AI agents to securely connect to and consume data from multiple platforms (Gmail, Google Docs, Sheets, Slack, etc.) without requiring developer-written OAuth plumbing or provider-specific SDK wrappers.
+
+## Philosophy
+* **Agent-First**: Designed for deterministic and structured agent execution. Responses from different providers are normalized into consistent formats that are highly predictable and easily read by standard LLMs. 
+* **Secure by Default**: Agents operate under the principle of Least Privilege. Tokens are encrypted at rest, and permissions are strictly bounded and scoped per user.
+* **Plug and Play**: A single NPM package replaces dozens of provider SDKs.
+
+## How It Works
+1. **Connect Accounts**: Users authenticate directly via UnifiedDataAI's OAuth flows. 
+2. **Unified API Layer**: UnifiedDataAI handles refresh logic, rate limits, and provider integrations behind the scenes.
+3. **Structured Access**: Developer's agents make requests via our strictly typed API to query data across connected integrations.
+4. **Execution Guarantees**: Actions are taken across platforms with clean permission isolation.
+
+## Technical Details
+- Endpoint Structure: REST API conforming to standardized data schemas.
+- Supported Providers: Google Workspace (Gmail, Docs, Sheets, Calendar, Drive), Slack.
+- Environments: Server-side Node.js / TypeScript.
+
+## Official Resources
+- Website: https://unifieddataai.github.io/
+- Get Early Access: https://unifieddataai.github.io/#early-access

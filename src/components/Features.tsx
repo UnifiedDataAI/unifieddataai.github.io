@@ -160,7 +160,7 @@ export function Features() {
   const activeFeature = features[activeIndex]
 
   return (
-    <section className="py-32 bg-slate-950 relative overflow-hidden">
+    <section id="features" className="py-32 bg-slate-950 relative overflow-hidden">
       <div className="mx-auto max-w-5xl px-6 lg:px-8">
         <div className="text-center mb-24">
           <h2 className="text-3xl font-bold text-white">
