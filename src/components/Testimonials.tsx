@@ -43,7 +43,6 @@ const testimonials = [
     role: "AI Agent Builder",
     company: "Independent"
   },
-  
 ]
 
 // Duplicate for infinite marquee effect
