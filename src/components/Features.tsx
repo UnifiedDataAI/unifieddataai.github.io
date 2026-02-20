@@ -2,11 +2,21 @@
 
 import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { Sparkles, Search, Layers } from "lucide-react"
+import {
+  Share2,
+  Package,
+  FileJson,
+  Cpu,
+  ShieldCheck,
+  TrendingUp,
+  Sparkles,
+  Search,
+  Layers,
+} from "lucide-react"
 
 const features = [
   {
-
+    icon: Share2,
     title: "Universal Data API",
     description:
       "Access emails, sheets, docs, calendars, and messages through consistent, structured endpoints designed for AI agents.",
@@ -29,7 +39,7 @@ const features = [
     ],
   },
   {
-
+    icon: Package,
     title: "Plug-and-Play npm Package",
     description:
       "Install one npm package and connect. No provider-specific SDKs. No repeating OAuth plumbing for every service.",
@@ -52,7 +62,7 @@ const features = [
     ],
   },
   {
-
+    icon: FileJson,
     title: "Normalized Schemas",
     description:
       "Unified response shapes across Gmail, Outlook, Sheets, Docs, and more. Your agent logic stays clean and predictable.",
@@ -75,7 +85,7 @@ const features = [
     ],
   },
   {
-
+    icon: Cpu,
     title: "Agent-First Design",
     description:
       "Built specifically for deterministic and structured agent execution. Not retrofitted from traditional SaaS APIs.",
@@ -98,7 +108,7 @@ const features = [
     ],
   },
   {
-
+    icon: ShieldCheck,
     title: "Secure Connections",
     description:
       "Scoped OAuth connections with strict permission boundaries and secure token handling by default.",
@@ -121,7 +131,7 @@ const features = [
     ],
   },
   {
-
+    icon: TrendingUp,
     title: "Scales with You",
     description:
       "From early prototypes to production systems handling thousands of users. Infrastructure ready for growth.",
@@ -190,9 +200,12 @@ export function Features() {
                 >
                   
                   <div className="flex-1">
-                    <h3 className="text-xl md:text-2xl font-semibold">
-                      {feature.title}
-                    </h3>
+                     <h3 className="text-xl md:text-2xl font-semibold flex items-center gap-4">
+                  <span className={`transition-colors duration-300 ${activeIndex === index ? 'text-brand-400' : 'text-slate-600'}`}>
+                    <feature.icon className="w-6 h-6" />
+                  </span>
+                  {feature.title}
+                </h3>
                   </div>
                 </div>
 
