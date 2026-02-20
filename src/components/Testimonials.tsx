@@ -16,14 +16,14 @@ const testimonials = [
   {
     quote: "Security was our biggest blocker for me in order to build my own ai agent to automate my work, huh it's solved now.",
     author: "Marcus Jensen",
-    role: "Lead Engineer",
-    company: "SaaS Builder"
+    role: "SaaS Builder",
+    company: "Independent"
   },
   {
     quote: "We were dreading building OAuth flows for 5 different platforms. UnifiedData AI let us ship our agent in two days instead of two months. The unified API is a lifesaver.",
     author: "Sarah Chen",
-    role: "Founder",
-    company: "AI Automation Startup"
+    role: "Vibe Developer",
+    company: "Independent"
   },
   {
     quote: "I used it to build an agent that could read my emails and messages and automatically reply to them.",
@@ -34,14 +34,14 @@ const testimonials = [
   {
     quote: "I've tried building this in-house before. The edge cases around rate limits and permissions are a nightmare. UnifiedData AI just handles it all gracefully.",
     author: "Rachel Torres",
-    role: "Backend Lead",
-    company: "DataSyncOPO Solutions"
+    role: "AI Tools Builder",
+    company: "Independent"
   },
   {
     quote: "Connecting Google Drive to an LLM without giving it full read access to everything was practically impossible until we found this platform.",
     author: "James Wilson",
-    role: "AI Product Manager",
-    company: "ScaleFastIO"
+    role: "AI Agent Builder",
+    company: "Independent"
   },
   
 ]
